@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lebo's Tavern</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+       <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <h1>Lebo's Tavern</h1>
+            <p>The best burgers and pizzas in town.</p>
+        </div>
+    </header>
+    <main>
+        <div class="order-menu" id="order-menu"></div>
+            <div class="your-order hidden" id="your-order">
+                <h2> Your Order </h2>
+                <div class="your-order-item" id="your-order-item">
+                </div>
+                <div class ="order-total">
+                    <p>Total</p>
+                    <p class="total-amount" id="total-amount">$0</p>
+                </div>
+                <button class="submit-order" id="submit-order" data-submit="pay-modal">Complete Order</button>
+                <div class="pay-modal hidden" id="pay-modal"></div>
+            </div>
+            <div class="thanks-complete" id="thanks-complete"></div>
+        </div>
+    </main>
+    <footer>
+        <p>Lebo's Tavern @1998</p>
+    </footer>
+    <script src="index.js" type="module"></script>
+    <script src="data.js" type="module"></script>
+</body>
+</html>
